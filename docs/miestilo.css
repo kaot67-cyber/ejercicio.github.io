@@ -1,0 +1,88 @@
+/* establece estilo a la cabecera */
+header{
+    display: flex;/*convierte el header en un contenedor flexible*/
+    align-items: center; /*le dice a header que alinee sus elementos higos a la mitad del eje transversal*/
+    width: 100%;
+    justify-content: center;/*centra horizontalmente */
+    overflow: hidden;/* es una propiedad que oculta cualquier contenido que se salga de los limites del contenedor*/
+    height: auto;
+    background-color: #ca8608; /* color de fondo de la cabecera */
+    padding: 1%; /* espacio interno */
+    text-align: center; /* alineacion del texto */
+    border-top: 10px solid rgb(128, 58, 0); /* color y ancho del borde superior */
+    border-bottom: 10px solid rgb(13, 2, 24); /* color y ancho del borde inferior */
+    color: beige; /* color del texto */
+}
+/* establece estilo a la imagen */ 
+header img{ 
+    max-width: 30%;
+    height: auto; /* alto de la imagen que se adapta a lo ancho */
+     /*float: left;  ubicacion de la imagen */
+    /*display:;  se muestra en la misma linea que el texto */
+    margin-right: 0px; /*margenes dentro de la cabecera */
+    margin-top: 10px;
+    margin-right: 0%;/* margen dentro de la cabecera */
+    margin-left: 30%;
+} 
+/*Estilo para la barra de navegacion */
+.navbar ul{
+    background-color: #ca8608; /*color de fondo */
+    list-style: none; /* elimina los marcadores * de la lista */
+    display: flex; /* crea una barra o contenedor que permite a sus elementos distribuirse de manera flexible y adaptarse al espacio */
+    justify-content: flex-start; /* los botones se distribuyen de manera uniforme en la barra de navegacion, con un mismo espacio alrededor de cada boton */
+    padding: 0; /* espaciado interno */
+    margin: 0; /* margen entre la barra nav y header */
+}
+.a{
+    text-decoration: none;
+    color: beige;
+}
+/* establece estilo para los botones */
+.btn-nav {
+    background-color: rgb(255, 102, 0); /* color de fondo del boton */
+    color: rgb(4, 0, 7); /* es el color del texto */
+    border: 1px solid #964414; /* elimina el borde que estaba predeterminado en los botones */
+    padding: 10px 20px; /* es el espacio interno entre los botones */
+    font-size: 16px; /* tamanio de la fuente */
+    cursor: pointer; /* cambia el cursor a una mano cuando pasa por encima del boton */
+}
+/* Estilo para cuando se pasa el cursor sobre los botones */
+.btn-nav:hover{
+    background-color: #281496; /* cambia el color de fondo */
+}
+.contenedor{
+    display:flex;
+    width: 100vw;
+}
+.articulo{
+    background-color: #3c6eda;
+   flex: 3;
+   padding: 20px;
+}
+.pie{
+    background-color: #281496;
+}
+.propaganda{
+    background-color: red;
+    flex: 1;
+   padding:20px;
+}
+body{
+    margin: 0;
+}
+.boton-enlace{
+    display: inline-block; /*permite aplicar padding y margenes*/
+    padding: 10px 20px; 
+    background-color: #6d6d6d;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none; /*Elimina el subrayado del enlace*/
+    border-radius: none; /* quita bordes redondeados  - - en el caso que si quieras redondeado dale una medida en px*/
+    border: none;
+    cursor: pointer; /* cambia el cursor */
+    font-family: Arial, Helvetica, sans-serif
+    ;
+    }
+.boton-enlace:hover{
+    background-color: #ca8608; /* cambia el color del boton */
+}
